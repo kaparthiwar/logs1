@@ -1,0 +1,845 @@
+2018-09-20 15:58:08.231  INFO 11821 --- [localhost-startStop-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2018-09-20 15:58:08.275  INFO 11821 --- [localhost-startStop-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2018-09-20 15:58:14.245  INFO 3024 --- [localhost-startStop-1] c.r.c.CdmApiApplication                  : Starting CdmApiApplication v1.0 on tomcat1.rev.com with PID 3024 (/opt/tomcat/webapps/cdm-api-1.0/WEB-INF/classes started by root in /opt/tomcat/logs)
+2018-09-20 15:58:14.250  INFO 3024 --- [localhost-startStop-1] c.r.c.CdmApiApplication                  : The following profiles are active: dev
+2018-09-20 15:58:14.331  INFO 3024 --- [localhost-startStop-1] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@392ee3e3: startup date [Thu Sep 20 15:58:14 IST 2018]; root of context hierarchy
+2018-09-20 15:58:16.777  INFO 3024 --- [localhost-startStop-1] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5f38125b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-20 15:58:16.884  INFO 3024 --- [localhost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2553 ms
+2018-09-20 15:58:17.564  INFO 3024 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'errorPageFilter' to: [/*]
+2018-09-20 15:58:17.564  INFO 3024 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'metricsFilter' to: [/*]
+2018-09-20 15:58:17.565  INFO 3024 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-20 15:58:17.565  INFO 3024 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-20 15:58:17.565  INFO 3024 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-20 15:58:17.565  INFO 3024 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-20 15:58:17.567  INFO 3024 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-09-20 15:58:17.567  INFO 3024 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-09-20 15:58:17.567  INFO 3024 --- [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-09-20 15:58:17.567  INFO 3024 --- [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-20 15:58:18.057  INFO 3024 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-09-20 15:58:18.081  INFO 3024 --- [localhost-startStop-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-20 15:58:18.174  INFO 3024 --- [localhost-startStop-1] o.h.Version                              : HHH000412: Hibernate Core {5.0.11.Final}
+2018-09-20 15:58:18.176  INFO 3024 --- [localhost-startStop-1] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2018-09-20 15:58:18.178  INFO 3024 --- [localhost-startStop-1] o.h.c.Environment                        : HHH000021: Bytecode provider name : javassist
+2018-09-20 15:58:18.249  INFO 3024 --- [localhost-startStop-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-20 15:58:19.008  INFO 3024 --- [localhost-startStop-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-09-20 15:58:19.784  INFO 3024 --- [localhost-startStop-1] o.h.t.h.SchemaUpdate                     : HHH000228: Running hbm2ddl schema update
+2018-09-20 15:58:22.030  INFO 3024 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-09-20 15:58:22.394  INFO 3024 --- [localhost-startStop-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-09-20 15:58:23.547  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/load],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.datasets.DatasetsController.saveDataset(com.reavidence.cdmapi.datasets.Dataset,org.springframework.validation.BindingResult)
+2018-09-20 15:58:23.548  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/byName/{datasetName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.datasets.DatasetsController.GetByDatasetName(java.lang.String)
+2018-09-20 15:58:23.549  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/all || /datasets/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.reavidence.cdmapi.datasets.DatasetsController.getDataSet(java.util.Optional<java.lang.Long>)
+2018-09-20 15:58:23.549  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/delete/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.datasets.DatasetsController.deleteDataSet(java.lang.Long)
+2018-09-20 15:58:23.549  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/get-all/Providers || /datasets/get-one/{vendorName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.datasets.DatasetsController.getAllDatasetProviders(java.util.Optional<java.lang.String>)
+2018-09-20 15:58:23.550  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/search-by/datasetName],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.datasets.DatasetsController.getDataDictionaryVariablesByDatasetName(java.lang.String)
+2018-09-20 15:58:23.550  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/save-by/{datasetName}/{datasetProvider}],methods=[GET]}" onto public org.json.simple.JSONObject com.reavidence.cdmapi.datasets.DatasetsController.saveDatasetbyDatasetName(java.lang.String,java.lang.String)
+2018-09-20 15:58:23.555  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/create],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.createDataDictionaryVariables(java.util.List<com.reavidence.cdmapi.datasets.variables.DataDictionaryVariable>,org.springframework.validation.BindingResult)
+2018-09-20 15:58:23.555  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/ || /dataDictionaryVariable/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.getDataDictionaryVariables(java.util.Optional<java.lang.Integer>)
+2018-09-20 15:58:23.555  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/get-by/{datasetName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.getDataDictionaryVariables(java.lang.String)
+2018-09-20 15:58:23.556  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/edit/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.updateDataDictionaryVariables(com.reavidence.cdmapi.datasets.variables.DataDictionaryVariable,java.lang.Integer,org.springframework.validation.BindingResult)
+2018-09-20 15:58:23.556  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/variables/map-dataset/{dId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.mapDataset(com.reavidence.cdmapi.datasets.variables.DataDictionaryVariable,java.lang.Long,org.springframework.validation.BindingResult)
+2018-09-20 15:58:23.556  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/variables/{id}/unmapped],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.getUnMappedDataDictionaryVariables(java.lang.Long)
+2018-09-20 15:58:23.557  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/variables/mapped/{datasetName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.getMappedOmopVariables(java.lang.String)
+2018-09-20 15:58:23.557  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/loaded-variables/{datasetName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.getLoadedDataSets(java.lang.String)
+2018-09-20 15:58:23.557  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/get-type/{column}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.getVarType(java.util.List<com.reavidence.cdmapi.datasets.variables.DataDictionaryVariable>,java.lang.String)
+2018-09-20 15:58:23.558  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/save/variables],methods=[POST]}" onto public org.json.simple.JSONObject com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.getVarType(java.util.Map<java.lang.String, java.lang.String>)
+2018-09-20 15:58:23.558  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryVariable/get-by/Dataset/{datasetName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableController.getMappedDataDictionaryVariables(java.lang.String)
+2018-09-20 15:58:23.559  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryvariablevalue/create],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableValueController.createDataDictionaryVariableValue(java.util.List<com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableValue>,org.springframework.validation.BindingResult)
+2018-09-20 15:58:23.560  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryvariablevalue/ || /dataDictionaryvariablevalue/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableValueController.getDataDictionaryVariableValues(java.util.Optional<java.lang.Long>)
+2018-09-20 15:58:23.560  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryvariablevalue/setVariable/{id}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableValueController.setDataDictionaryVariable(java.lang.Integer,java.util.List<com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableValue>,org.springframework.validation.BindingResult)
+2018-09-20 15:58:23.560  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryvariablevalue/edit/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableValueController.updateDataDictionaryVariableValue(java.lang.Long,com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableValue,org.springframework.validation.BindingResult)
+2018-09-20 15:58:23.560  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataDictionaryvariablevalue/dataDictionaryVariable/{variableName}/{name}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.datasets.variables.DataDictionaryVariableValueController.getDataDictionaryVariableValuesByVariable(java.lang.String,java.lang.String,java.lang.String)
+2018-09-20 15:58:23.564  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/icdCodesSearch/drugs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.icdcodes.IcdCodesController.getDrugCode(java.lang.String)
+2018-09-20 15:58:23.564  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/icdCodesSearch/drugs],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.icdcodes.IcdCodesController.updateDrugCode(com.reavidence.cdmapi.icdcodes.IcdDrugCode)
+2018-09-20 15:58:23.564  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/icdCodesSearch/diseases],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.icdcodes.IcdCodesController.getDiagnosisCode(java.lang.String,java.lang.String)
+2018-09-20 15:58:23.565  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/icdCodesSearch/diseases],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.icdcodes.IcdCodesController.updateDiagnosisCode(com.reavidence.cdmapi.icdcodes.IcdDiagnosisCode)
+2018-09-20 15:58:23.565  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/icdCodesSearch/procedures],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.icdcodes.IcdCodesController.getProcedureCode(java.lang.String)
+2018-09-20 15:58:23.565  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/icdCodesSearch/procedures],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.icdcodes.IcdCodesController.updateProcedureCode(com.reavidence.cdmapi.icdcodes.IcdProcedureCode)
+2018-09-20 15:58:23.567  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/omopvariable/create],methods=[POST]}" onto public org.springframework.http.ResponseEntity com.reavidence.cdmapi.omop.OmopVariableController.createOmopVariable(java.util.List<com.reavidence.cdmapi.omop.OmopVariable>,org.springframework.validation.BindingResult)
+2018-09-20 15:58:23.567  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/omopvariable/create-group],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.omop.OmopVariableController.createOmopVariableGroup(java.util.List<com.reavidence.cdmapi.omop.OmopVariableGroup>,org.springframework.validation.BindingResult)
+2018-09-20 15:58:23.567  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/omopvariable/{name}/unmapped-byname],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.omop.OmopVariableController.getUnMappedOmopVariablesByName(java.lang.String)
+2018-09-20 15:58:23.568  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/omopvariable/map/{omopId}/{ddvId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.omop.OmopVariableController.mapOmopVariableToDataDictionaryVariable(java.lang.String,java.lang.Long,java.lang.Integer)
+2018-09-20 15:58:23.568  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/omopvariable/{id}/unmapped],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.omop.OmopVariableController.getUnMappedOmopVariables(java.lang.Long)
+2018-09-20 15:58:23.568  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/omopvariable/edit/{variableName}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.cdmapi.omop.OmopVariableController.editOmopVariables(java.lang.String,com.reavidence.cdmapi.omop.OmopVariable)
+2018-09-20 15:58:23.568  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/omopvariable/ || /omopvariable/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.reavidence.cdmapi.omop.OmopVariableController.getOmopVariable(java.util.Optional<java.lang.Long>)
+2018-09-20 15:58:23.568  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/omopvariable/groups || /omopvariable/groups/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.cdmapi.omop.OmopVariableController.getOmopVariableGroup(java.util.Optional<java.lang.Long>)
+2018-09-20 15:58:23.572  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-20 15:58:23.573  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-20 15:58:23.574  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-20 15:58:23.577  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-20 15:58:23.577  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-20 15:58:24.033  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:58:24.038  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:58:24.039  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-09-20 15:58:24.039  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:58:24.039  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:58:24.040  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:58:24.040  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:58:24.040  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:58:24.041  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2018-09-20 15:58:24.042  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-09-20 15:58:24.042  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:58:24.043  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-09-20 15:58:24.043  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-09-20 15:58:24.044  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.m.EndpointHandlerMapping       : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:58:24.239  INFO 3024 --- [localhost-startStop-1] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2018-09-20 15:58:24.390  INFO 3024 --- [localhost-startStop-1] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: ace34b47-ae88-4a47-8a3b-70e20a5f23ac
+
+2018-09-20 15:58:24.456  INFO 3024 --- [localhost-startStop-1] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2018-09-20 15:58:24.519  INFO 3024 --- [localhost-startStop-1] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7db5dc18, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e235558, org.springframework.security.web.header.HeaderWriterFilter@34912a9, org.springframework.security.web.authentication.logout.LogoutFilter@5d6be7ac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@742b3740, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74faf3f7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7fe10285, org.springframework.security.web.session.SessionManagementFilter@5f9dca9, org.springframework.security.web.access.ExceptionTranslationFilter@6557137e]
+2018-09-20 15:58:24.560  INFO 3024 --- [localhost-startStop-1] o.s.s.w.DefaultSecurityFilterChain       : Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@706f8025, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@233fdd60, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e41b72a, org.springframework.security.web.header.HeaderWriterFilter@23a863cd, org.springframework.security.web.authentication.logout.LogoutFilter@39299e31, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6f878088, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c234018, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cf5f45a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19f5a8eb, org.springframework.security.web.session.SessionManagementFilter@250eb39e, org.springframework.security.web.access.ExceptionTranslationFilter@5b91343e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@719deded]
+2018-09-20 15:58:24.732  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@392ee3e3: startup date [Thu Sep 20 15:58:14 IST 2018]; root of context hierarchy
+2018-09-20 15:58:24.810  INFO 3024 --- [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-20 15:58:24.810  INFO 3024 --- [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-20 15:58:24.883  INFO 3024 --- [localhost-startStop-1] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-20 15:58:25.266  INFO 3024 --- [localhost-startStop-1] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-20 15:58:25.280  INFO 3024 --- [localhost-startStop-1] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 0
+2018-09-20 15:58:25.347  INFO 3024 --- [localhost-startStop-1] o.s.c.s.DefaultLifecycleProcessor        : Starting beans in phase 2147483647
+2018-09-20 15:58:25.347  INFO 3024 --- [localhost-startStop-1] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-20 15:58:25.396  INFO 3024 --- [localhost-startStop-1] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-20 15:58:25.436  INFO 3024 --- [localhost-startStop-1] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-20 15:58:25.565  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDataDictionaryVariablesUsingGET_1
+2018-09-20 15:58:25.568  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDataDictionaryVariablesUsingGET_2
+2018-09-20 15:58:25.618  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVarTypeUsingPOST_1
+2018-09-20 15:58:25.669  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDataDictionaryVariableValuesUsingGET_1
+2018-09-20 15:58:25.686  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllDatasetProvidersUsingGET_1
+2018-09-20 15:58:25.711  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDataSetUsingGET_1
+2018-09-20 15:58:25.747  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOmopVariableUsingGET_1
+2018-09-20 15:58:25.750  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOmopVariableGroupUsingGET_1
+2018-09-20 15:58:25.852  INFO 3024 --- [localhost-startStop-1] c.r.c.CdmApiApplication                  : Started CdmApiApplication in 12.455 seconds (JVM running for 18.034)
+2018-09-20 15:59:07.999  INFO 3024 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-09-20 15:59:08.240  INFO 3024 --- [localhost-startStop-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-09-20 15:59:08.342  INFO 3024 --- [localhost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-20 15:59:08.476  INFO 3024 --- [localhost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-09-20 15:59:08.478  INFO 3024 --- [localhost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-09-20 15:59:08.546  INFO 3024 --- [localhost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-20 15:59:08.721  INFO 3024 --- [localhost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-09-20 15:59:09.759  INFO 3024 --- [localhost-startStop-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-09-20 15:59:13.060  INFO 3024 --- [localhost-startStop-1] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-20 15:59:13.087  INFO 3024 --- [localhost-startStop-1] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-20 15:59:13.120  INFO 3024 --- [localhost-startStop-1] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-20 15:59:13.262  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDataSourceUsingGET_1
+2018-09-20 15:59:34.060  INFO 3024 --- [localhost-startStop-1] c.r.account.WebServiceApplication        : Starting WebServiceApplication v1.5 on tomcat1.rev.com with PID 3024 (/opt/tomcat/webapps/api-anlitiks/WEB-INF/classes started by root in /opt/tomcat/logs)
+2018-09-20 15:59:34.071  INFO 3024 --- [localhost-startStop-1] c.r.account.WebServiceApplication        : The following profiles are active: ans
+2018-09-20 15:59:34.117  INFO 3024 --- [localhost-startStop-1] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47c17744: startup date [Thu Sep 20 15:59:34 IST 2018]; root of context hierarchy
+2018-09-20 15:59:36.343  INFO 3024 --- [localhost-startStop-1] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$920c2672] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-20 15:59:36.420  INFO 3024 --- [localhost-startStop-1] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [class org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$2ab9eeac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-20 15:59:36.433  INFO 3024 --- [localhost-startStop-1] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [class org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-20 15:59:36.435  INFO 3024 --- [localhost-startStop-1] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@78fc7d7e' of type [class org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-20 15:59:36.450  INFO 3024 --- [localhost-startStop-1] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [class org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$4f8e915e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-20 15:59:36.462  INFO 3024 --- [localhost-startStop-1] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [class org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-20 15:59:36.491  INFO 3024 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2374 ms
+2018-09-20 15:59:39.086  INFO 3024 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-09-20 15:59:39.118  INFO 3024 --- [localhost-startStop-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-09-20 15:59:39.252  INFO 3024 --- [localhost-startStop-1] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2018-09-20 15:59:39.253  INFO 3024 --- [localhost-startStop-1] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-09-20 15:59:39.255  INFO 3024 --- [localhost-startStop-1] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-09-20 15:59:39.309  INFO 3024 --- [localhost-startStop-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-09-20 15:59:39.462  INFO 3024 --- [localhost-startStop-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-09-20 15:59:40.455  INFO 3024 --- [localhost-startStop-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-09-20 15:59:40.646  INFO 3024 --- [localhost-startStop-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-09-20 15:59:41.449  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-09-20 15:59:41.450  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2018-09-20 15:59:41.450  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-20 15:59:41.450  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-20 15:59:41.450  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-20 15:59:41.450  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-20 15:59:41.452  INFO 3024 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-09-20 15:59:41.452  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2018-09-20 15:59:41.452  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'authenticationTokenFilterBean' to: [/*]
+2018-09-20 15:59:41.453  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2018-09-20 15:59:41.453  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-20 15:59:41.453  INFO 3024 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2018-09-20 15:59:42.379  INFO 3024 --- [localhost-startStop-1] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-09-20 15:59:43.511  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/analysis/forward/rserver],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.AnalyticsController.rserver(java.lang.String,javax.servlet.http.HttpServletRequest) throws org.json.simple.parser.ParseException
+2018-09-20 15:59:43.513  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/analysis/sendemail],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.AnalyticsController.sendEmail(javax.servlet.http.HttpServletRequest,java.lang.Integer)
+2018-09-20 15:59:43.513  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/analysis/analysistable/limit],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.AnalyticsController.limitAnalyticsTableRows(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-09-20 15:59:43.516  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/business-requirements/{projectId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.BuissinessRequirementsController.requirements(java.lang.Long)
+2018-09-20 15:59:43.516  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/business-requirements/delete/{reqId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.BuissinessRequirementsController.delete(java.lang.Long)
+2018-09-20 15:59:43.517  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/business-requirements/{projectId}/save],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.BuissinessRequirementsController.save(com.reavidence.account.model.BuissinessReq,java.lang.Long)
+2018-09-20 15:59:43.518  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/drugs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.CodesSearchController.drugs(java.lang.String)
+2018-09-20 15:59:43.518  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/diseases],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.CodesSearchController.diseases(java.lang.String)
+2018-09-20 15:59:43.520  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search/procedures],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.CodesSearchController.procedures(java.lang.String)
+2018-09-20 15:59:43.522  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/company],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.CompanyController.allCompanies()
+2018-09-20 15:59:43.525  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/company/{roleId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.CompanyController.company(java.lang.Integer)
+2018-09-20 15:59:43.527  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/company/update-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.CompanyController.updateStatus(com.reavidence.account.model.Company)
+2018-09-20 15:59:43.531  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/company/find/{companyId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.CompanyController.find(java.lang.Integer)
+2018-09-20 15:59:43.532  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/company/save],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.CompanyController.save(org.springframework.mobile.device.Device,com.reavidence.account.model.Company)
+2018-09-20 15:59:43.536  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/company-role-menus/{roleId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.CompanyRoleMenusController.find(javax.servlet.http.HttpServletRequest,java.lang.Integer)
+2018-09-20 15:59:43.538  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/company-role-menus/save],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.CompanyRoleMenusController.save(javax.servlet.http.HttpServletRequest,com.reavidence.account.model.CompanyRoleMenus)
+2018-09-20 15:59:43.557  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/raw],methods=[GET]}" onto public org.json.simple.JSONArray com.reavidence.account.controllers.DataSourceController.raw()
+2018-09-20 15:59:43.558  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/all || /datasource/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.DataSourceController.getDataSource(javax.servlet.http.HttpServletRequest,java.util.Optional<java.lang.Long>)
+2018-09-20 15:59:43.558  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/metadata],methods=[GET]}" onto public org.json.simple.JSONObject com.reavidence.account.controllers.DataSourceController.getMetaData(java.lang.String)
+2018-09-20 15:59:43.558  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/delete/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.DataSourceController.deleteDataSourceById(javax.servlet.http.HttpServletRequest,java.lang.Long)
+2018-09-20 15:59:43.559  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/datasets],methods=[GET]}" onto public org.json.simple.JSONArray com.reavidence.account.controllers.DataSourceController.getDatasets(java.lang.String)
+2018-09-20 15:59:43.559  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/upload],methods=[POST]}" onto public org.json.simple.JSONObject com.reavidence.account.controllers.DataSourceController.singleFileUpload(org.springframework.web.multipart.MultipartFile)
+2018-09-20 15:59:43.560  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/image-upload],methods=[POST],produces=[text/html;charset=UTF-8]}" onto public java.lang.String com.reavidence.account.controllers.DataSourceController.singleImageUpload(java.lang.String,org.springframework.web.multipart.MultipartFile)
+2018-09-20 15:59:43.560  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/datasets/{classification}/{sub}],methods=[GET]}" onto public java.util.List<com.reavidence.account.model.LoadedDataSource> com.reavidence.account.controllers.DataSourceController.datasets(java.lang.String,java.lang.String)
+2018-09-20 15:59:43.561  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/rawtable],methods=[POST]}" onto public org.json.simple.JSONObject com.reavidence.account.controllers.DataSourceController.rawtable(java.lang.String)
+2018-09-20 15:59:43.561  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/datasets/{table}],methods=[GET]}" onto public java.util.List<com.reavidence.account.model.StudyVariable> com.reavidence.account.controllers.DataSourceController.getStudyVariablesByTable(java.lang.String)
+2018-09-20 15:59:43.562  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/raw/restruct],methods=[POST]}" onto public void com.reavidence.account.controllers.DataSourceController.restructRawtable(java.lang.String)
+2018-09-20 15:59:43.562  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/raw/preview],methods=[GET]}" onto public org.json.simple.JSONObject com.reavidence.account.controllers.DataSourceController.getRawPreview(java.lang.String,java.lang.String)
+2018-09-20 15:59:43.563  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/vcs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.DataSourceController.getVendorClassificationAndSubClassificationByFilename(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.563  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/loaded-datasets],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.DataSourceController.loadedDatasets(javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.564  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/save || /datasource/{id}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.DataSourceController.saveAddDataSource(com.reavidence.account.model.DataSource,javax.servlet.http.HttpServletRequest,java.util.Optional<java.lang.Long>)
+2018-09-20 15:59:43.565  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/fetch/{userName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.DataSourceController.getDataSourcesByUsername(java.lang.String)
+2018-09-20 15:59:43.566  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/],methods=[GET]}" onto public org.json.simple.JSONObject com.reavidence.account.controllers.DataSourceController.listDataDource()
+2018-09-20 15:59:43.567  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/edit],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.DataSourceController.editDataDource(org.json.simple.JSONObject)
+2018-09-20 15:59:43.568  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/classifications],methods=[GET]}" onto public org.json.simple.JSONObject com.reavidence.account.controllers.DataSourceController.listDataSourceWithClassifications()
+2018-09-20 15:59:43.569  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/rdbms],methods=[GET]}" onto public org.json.simple.JSONArray com.reavidence.account.controllers.DataSourceController.rdbms()
+2018-09-20 15:59:43.569  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/hadoop],methods=[GET]}" onto public org.json.simple.JSONArray com.reavidence.account.controllers.DataSourceController.hadoop()
+2018-09-20 15:59:43.570  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/],methods=[POST]}" onto public org.json.simple.JSONObject com.reavidence.account.controllers.DataSourceController.datasourcelist(java.lang.String)
+2018-09-20 15:59:43.571  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/classification],methods=[GET]}" onto public java.util.Map<java.lang.String, java.util.List<java.lang.String>> com.reavidence.account.controllers.DataSourceController.classification()
+2018-09-20 15:59:43.571  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/ftp],methods=[GET]}" onto public org.json.simple.JSONArray com.reavidence.account.controllers.DataSourceController.ftp()
+2018-09-20 15:59:43.571  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.reavidence.account.controllers.DataSourceController.update(java.lang.String)
+2018-09-20 15:59:43.572  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/load/{sourcetype}/{dsname}/{isreplace}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.reavidence.account.controllers.DataSourceController.load(java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.573  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasource/delete/{dstype}/{dsname}],methods=[POST]}" onto public void com.reavidence.account.controllers.DataSourceController.delete(java.lang.String,java.lang.String)
+2018-09-20 15:59:43.574  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/generate/pdf/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.reavidence.account.controllers.GeneratePdfController.listDataSource(java.lang.String) throws java.io.IOException,com.itextpdf.text.DocumentException
+2018-09-20 15:59:43.575  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/graphs/{dataset}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.GraphsController.getGraph(java.util.Map<java.lang.String, java.lang.Object>,java.lang.String) throws java.lang.Exception
+2018-09-20 15:59:43.578  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hadoop/load],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.HadoopLoading.load(javax.servlet.http.HttpServletRequest,java.lang.String) throws java.lang.Exception
+2018-09-20 15:59:43.583  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/generic],methods=[POST]}" onto public org.springframework.http.ResponseEntity com.reavidence.account.controllers.ImpalaController.genericSQL(org.json.simple.JSONObject)
+2018-09-20 15:59:43.585  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getcol/{filename}/{vendorName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ImpalaController.getcolumns(java.lang.String,java.lang.String)
+2018-09-20 15:59:43.586  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/create/finalize/],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ImpalaController.createStudyTable(org.json.simple.JSONObject)
+2018-09-20 15:59:43.586  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/generic/sqlarray],methods=[POST]}" onto public org.springframework.http.ResponseEntity com.reavidence.account.controllers.ImpalaController.genericSQLArray(org.json.simple.JSONArray)
+2018-09-20 15:59:43.587  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/variablevalues/{tablename}/{variable}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ImpalaController.variableValues(java.lang.String,java.lang.String)
+2018-09-20 15:59:43.587  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/variablescount/{projectId}/{dataset}/{variable}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ImpalaController.variableCount(java.lang.Long,java.lang.String,java.lang.String)
+2018-09-20 15:59:43.588  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invited-projects],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.InvitedProjectsController.invitedProjectss(javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.588  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/invited-projects/save],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.InvitedProjectsController.save(javax.servlet.http.HttpServletRequest,java.util.List<com.reavidence.account.dto.InvitedProjectsDto>)
+2018-09-20 15:59:43.589  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/litsearch/searchkey],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.LiteratureSearchKeyController.searchKeyValue(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String)
+2018-09-20 15:59:43.590  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/litsearch/savekeyvalue],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.LiteratureSearchKeyController.saveKeyValue(javax.servlet.http.HttpServletRequest,com.reavidence.account.model.LiteratureSearchKey)
+2018-09-20 15:59:43.593  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pdf/export-literature-articles],methods=[POST]}" onto public void com.reavidence.account.controllers.PDFController.exportLiteratureArticles(javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>) throws java.io.IOException,com.itextpdf.text.DocumentException
+2018-09-20 15:59:43.593  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/pdf/export-requirements],methods=[POST]}" onto public void com.reavidence.account.controllers.PDFController.exportRequirements(javax.servlet.http.HttpServletResponse,java.util.Map<java.lang.String, java.lang.Object>) throws java.io.IOException,com.itextpdf.text.DocumentException
+2018-09-20 15:59:43.596  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/{roleId}/{companyId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ProjectController.projects(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.Integer)
+2018-09-20 15:59:43.597  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/{projectId}/state],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ProjectController.saveLastStateOfProject(com.reavidence.account.model.ProjectLastState,java.lang.Long)
+2018-09-20 15:59:43.597  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/{projectId}/state],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ProjectController.getAllStatesOfProject(java.lang.Long)
+2018-09-20 15:59:43.598  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/state/{projectId}/{lastLocation}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ProjectController.getProjectLaststateByProjectidAndLastlocation(java.lang.Long,java.lang.String)
+2018-09-20 15:59:43.598  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/state],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ProjectController.getLastStatesOfUser(javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.598  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/{projectId}/projectsummary],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ProjectController.getProjectSummary(java.lang.Long)
+2018-09-20 15:59:43.598  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/complete/{projectId}/{status}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ProjectController.finalizeProject(java.lang.Long,java.lang.String)
+2018-09-20 15:59:43.599  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/find/{projectId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ProjectController.find(java.lang.Long)
+2018-09-20 15:59:43.599  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/delete/{projectId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ProjectController.delete(java.lang.Long,java.lang.String[])
+2018-09-20 15:59:43.599  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/projects/{roleId}/save],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ProjectController.save(javax.servlet.http.HttpServletRequest,java.lang.Integer,com.reavidence.account.model.Project)
+2018-09-20 15:59:43.600  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/publish/{projectId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.PublishController.publishProject(java.lang.Long)
+2018-09-20 15:59:43.602  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/report_variable/create],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ReportVariablesController.saveKeyValue(java.util.List<com.reavidence.account.model.ReportVariables>)
+2018-09-20 15:59:43.602  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/report_variable/by/{projectid}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ReportVariablesController.getByProjectId(java.lang.Long)
+2018-09-20 15:59:43.602  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/report_variable/by/{projectid}/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ReportVariablesController.getByProjectIdAndStudyVariableId(java.lang.Long,java.lang.Long)
+2018-09-20 15:59:43.603  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/report_variable/delete/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.ReportVariablesController.deleteReportVariables(java.lang.Long)
+2018-09-20 15:59:43.603  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/roles/{roleId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.RolesController.roles(java.lang.Integer)
+2018-09-20 15:59:43.604  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sponsors],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.SponsorController.sponsors(javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.604  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sponsors/save],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.SponsorController.save(javax.servlet.http.HttpServletRequest,com.reavidence.account.model.Sponsor)
+2018-09-20 15:59:43.610  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/variable-values/{datasetId}/{projectId}/{variableName}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.StudyDataSetController.saveVariableValueByDatasetIdAndProjectId(com.reavidence.account.model.StudyVariableValue,java.lang.Long,java.lang.Long,java.lang.String)
+2018-09-20 15:59:43.611  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/variable/values/{datasetId}/{projectId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity com.reavidence.account.controllers.StudyDataSetController.listVariableValuesByProjectId(java.lang.Long,java.lang.Long)
+2018-09-20 15:59:43.611  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/variable/values/update],methods=[POST]}" onto public org.springframework.http.ResponseEntity com.reavidence.account.controllers.StudyDataSetController.updateStudyVariableValues(com.reavidence.account.model.StudyVariableValue)
+2018-09-20 15:59:43.612  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/variable/values/delete/{valueId}/{varId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity com.reavidence.account.controllers.StudyDataSetController.deleteVariableValuesById(java.lang.Long,java.lang.Long)
+2018-09-20 15:59:43.612  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/variables/{projectId}/{datasetId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.StudyDataSetController.createStudyVariable(org.json.simple.JSONObject,java.lang.Long,java.lang.Long) throws java.io.IOException
+2018-09-20 15:59:43.612  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/variable-values/By/{uniqueId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.StudyDataSetController.getVariableValues(java.lang.String)
+2018-09-20 15:59:43.613  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/variables/{projectId}/{datasetId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.StudyDataSetController.getAllStudyVariablesByProject(java.lang.Long,java.lang.Long,org.springframework.http.HttpRequest)
+2018-09-20 15:59:43.613  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/created-variables/{projectId}/{datasetId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.StudyDataSetController.getCreatedVariablesByProject(java.lang.Long,java.lang.Long,org.springframework.http.HttpRequest)
+2018-09-20 15:59:43.614  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/delete-created-variable/{varId}/{projectId}/{datasetId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.StudyDataSetController.deleteCreatedVariable(java.lang.Long,java.lang.Long,java.lang.Long)
+2018-09-20 15:59:43.614  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/update-created-variable/{varId}/{projectId}/{datasetId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.StudyDataSetController.updateCreatedVariable(java.lang.Long,java.lang.Long,java.lang.Long,java.lang.String)
+2018-09-20 15:59:43.614  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/variable/values],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.StudyDataSetController.saveVariableValue(com.reavidence.account.model.StudyVariableValue)
+2018-09-20 15:59:43.615  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/delete-variables/{varId}/{projectId}/{datasetId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.StudyDataSetController.deleteVariables(java.lang.Long,java.lang.Long,java.lang.Long)
+2018-09-20 15:59:43.615  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/edit/variable-values/By/{uniqueId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.StudyDataSetController.editVariableValuesByuniqueId(com.reavidence.account.model.StudyVariableValue,java.lang.String)
+2018-09-20 15:59:43.615  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/studydataset/delete/variable-values/By/{uniqueId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.StudyDataSetController.deleteVariableValues(java.lang.String)
+2018-09-20 15:59:43.616  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/study-goal/{projectId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.StudyGoalController.studyGoals(java.lang.Long)
+2018-09-20 15:59:43.617  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/study-goal/delete/{studyGoalId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.StudyGoalController.delete(java.lang.Long)
+2018-09-20 15:59:43.617  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/study-goal/{projectId}/save],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.StudyGoalController.save(com.reavidence.account.model.StudyGoal,java.lang.Long)
+2018-09-20 15:59:43.618  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/areas],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.TherapeuticAreasController.getAreas(javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.619  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/areas/save],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.TherapeuticAreasController.save(javax.servlet.http.HttpServletRequest,com.reavidence.account.model.TherapeuticArea)
+2018-09-20 15:59:43.621  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/change-password],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.UserController.changePassword(com.reavidence.account.dto.UserRegisterDto)
+2018-09-20 15:59:43.621  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/confirm-password],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.UserController.confirmPassword(com.reavidence.account.dto.UserRegisterDto)
+2018-09-20 15:59:43.623  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/forgot-password],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.UserController.forgotPassword(org.springframework.mobile.device.Device,com.reavidence.account.dto.UserRegisterDto)
+2018-09-20 15:59:43.624  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/check-email],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.UserController.checkEmail(java.util.Optional<java.lang.String>)
+2018-09-20 15:59:43.625  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/invite-users],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.UserController.inviteUsers(org.springframework.mobile.device.Device,java.util.List<com.reavidence.account.dto.UserRegisterDto>,javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.626  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/menus],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.UserController.menus(javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.626  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{roleId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.UserController.users(javax.servlet.http.HttpServletRequest,java.lang.Integer)
+2018-09-20 15:59:43.627  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.UserController.register(org.springframework.mobile.device.Device,com.reavidence.account.dto.UserRegisterDto)
+2018-09-20 15:59:43.629  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/vendor],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.VendorController.allVendors()
+2018-09-20 15:59:43.630  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/workingdataset/workingtable/limit],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.WorkingDataSetController.limitWorkingTableRows(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+2018-09-20 15:59:43.631  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/workingdataset/update/new/variable],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.WorkingDataSetController.createVariable(java.lang.String)
+2018-09-20 15:59:43.631  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/workingdataset/create/variable/{projectId}/{datasetId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.WorkingDataSetController.updateVariable(java.lang.String,java.lang.Long,java.lang.Long)
+2018-09-20 15:59:43.631  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/workingdataset/delete-created-variable/{uniqueId}/{projectId}/{datasetId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.WorkingDataSetController.deleteCreatedVariable(java.lang.String,java.lang.Long,java.lang.Long)
+2018-09-20 15:59:43.632  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/workingdataset/edit/createvariables/{projectId}/{datasetId}/{uniqueId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.controllers.WorkingDataSetController.editVariableValuesByuniqueId(java.lang.String,java.lang.Long,java.lang.Long,java.lang.String)
+2018-09-20 15:59:43.633  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataset/variables/{id}/unmapped],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetVariableController.getUnMappedDatasetVariables(java.lang.Long)
+2018-09-20 15:59:43.633  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataset/variables/mapped/{dataset}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetVariableController.getMappedRapidVariables(java.lang.String)
+2018-09-20 15:59:43.634  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataset/variables/create],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetVariableController.createDatasetVariables(java.util.List<com.reavidence.account.model.cdm.DatasetVariable>)
+2018-09-20 15:59:43.634  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataset/variables || /dataset/variables/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetVariableController.getDatasetVariables(java.util.Optional<java.lang.Long>)
+2018-09-20 15:59:43.634  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dataset/variables/map-dataset/{dsId}/{dId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetVariableController.mapDataset(java.lang.Long,java.lang.Long,com.reavidence.account.model.cdm.DatasetVariable)
+2018-09-20 15:59:43.635  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/variablevalues/datasetVariable/{variableName}/{name}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetVariableValueController.datasetVariablevalues(java.lang.String,java.lang.String,java.lang.String)
+2018-09-20 15:59:43.635  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/variablevalues/create],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetVariableValueController.createDatasetVariablevalue(com.reavidence.account.model.cdm.DatasetVariableValue)
+2018-09-20 15:59:43.636  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/variablevalues/setVariable/{id}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetVariableValueController.createVariablevalue(java.lang.Long,java.util.List<com.reavidence.account.model.cdm.DatasetVariableValue>)
+2018-09-20 15:59:43.636  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/variablevalues/ || /variablevalues/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetVariableValueController.getDatasetVariables(java.util.Optional<java.lang.Long>)
+2018-09-20 15:59:43.637  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/create-dataset],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetsController.createDatasets(java.util.List<com.reavidence.account.model.cdm.Dataset>)
+2018-09-20 15:59:43.638  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/load],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetsController.loadDatasets(com.reavidence.account.model.cdm.Dataset)
+2018-09-20 15:59:43.638  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/get-variables],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetsController.getDatasetsnames(java.lang.String)
+2018-09-20 15:59:43.638  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/ || /datasets/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetsController.getDatasetVariables(java.util.Optional<java.lang.Long>)
+2018-09-20 15:59:43.639  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/datasets/generate-variables/{name}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.DatasetsController.getDatasetFileVariables(java.lang.String,org.json.simple.JSONObject)
+2018-09-20 15:59:43.642  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rapid/variables/create-groups],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.RapidAnalyzerController.createDatasets(java.util.List<com.reavidence.account.model.cdm.RapidAnalyzerVariableGroup>)
+2018-09-20 15:59:43.644  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rapid/variables/create],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.RapidAnalyzerController.createRapidAnalyzerVariables(java.util.List<com.reavidence.account.model.cdm.RapidAnalyzerVariable>)
+2018-09-20 15:59:43.644  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rapid/variables/ || /rapid/variables/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.RapidAnalyzerController.getRapidAnalyzerVariables(java.util.Optional<java.lang.Long>)
+2018-09-20 15:59:43.645  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rapid/variables/map/{raId}/{dsId}],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.RapidAnalyzerController.createmapRapidAnalyzerVariables(java.lang.String,java.lang.Long,java.lang.Long)
+2018-09-20 15:59:43.646  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rapid/variables/groups || /rapid/variables/groups/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.RapidAnalyzerController.getClassificationVariables(java.util.Optional<java.lang.Long>)
+2018-09-20 15:59:43.647  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rapid/variables/{id}/unmapped],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.RapidAnalyzerController.getUnMappedRapidVariables(java.lang.Long)
+2018-09-20 15:59:43.649  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rapid/variables/{name}/unmapped-byname],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.Object> com.reavidence.account.controllers.cdm.RapidAnalyzerController.getUnMappedRapidVariablesByName(java.lang.String)
+2018-09-20 15:59:43.650  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.security.AuthenticationRestController.createAuthenticationToken(com.reavidence.account.security.JwtAuthenticationRequest,org.springframework.mobile.device.Device,javax.servlet.http.HttpServletResponse) throws org.springframework.security.core.AuthenticationException
+2018-09-20 15:59:43.650  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/refresh],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> com.reavidence.account.security.AuthenticationRestController.refreshAndGetAuthenticationToken(javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.651  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logout],methods=[POST]}" onto public void com.reavidence.account.security.AuthenticationRestController.logout(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-20 15:59:43.651  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/unzipcontroller/unzip],methods=[POST]}" onto public void com.reavidence.account.utils.UnzipController.generateDatasetVariables(java.lang.String) throws java.io.IOException
+2018-09-20 15:59:43.652  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:43.658  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-20 15:59:43.659  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-20 15:59:43.660  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-20 15:59:43.664  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-20 15:59:43.664  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-20 15:59:44.364  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2018-09-20 15:59:44.364  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:59:44.365  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:59:44.366  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:59:44.367  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2018-09-20 15:59:44.367  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:59:44.368  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2018-09-20 15:59:44.369  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2018-09-20 15:59:44.369  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:59:44.370  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:59:44.372  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:59:44.372  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(java.security.Principal)
+2018-09-20 15:59:44.373  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:59:44.374  INFO 3024 --- [localhost-startStop-1] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2018-09-20 15:59:44.783  INFO 3024 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error'], org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@7916ef85]], []
+2018-09-20 15:59:44.906  INFO 3024 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d1c3bc8, org.springframework.security.web.context.SecurityContextPersistenceFilter@3afb1b03, org.springframework.security.web.header.HeaderWriterFilter@2374466c, org.springframework.security.web.authentication.logout.LogoutFilter@18e1cb10, com.reavidence.account.security.JwtAuthenticationTokenFilter@7e3cf054, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64f856d6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@543f222c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f35fa16, org.springframework.security.web.session.SessionManagementFilter@5cc1775d, org.springframework.security.web.access.ExceptionTranslationFilter@340d550b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f940494]
+2018-09-20 15:59:44.936  INFO 3024 --- [localhost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/h2-console/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@149bbcbb, org.springframework.security.web.context.SecurityContextPersistenceFilter@64c25f2c, org.springframework.security.web.header.HeaderWriterFilter@1ee5f9b2, org.springframework.security.web.authentication.logout.LogoutFilter@304259b5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7029025e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55c65249, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64df192a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6341e05f, org.springframework.security.web.session.SessionManagementFilter@5c9336a3, org.springframework.security.web.access.ExceptionTranslationFilter@2ad37cc9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77a7ed20]
+2018-09-20 15:59:45.191  INFO 3024 --- [localhost-startStop-1] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47c17744: startup date [Thu Sep 20 15:59:34 IST 2018]; root of context hierarchy
+2018-09-20 15:59:45.292  INFO 3024 --- [localhost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-20 15:59:45.293  INFO 3024 --- [localhost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-20 15:59:45.363  INFO 3024 --- [localhost-startStop-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-20 15:59:45.989  INFO 3024 --- [localhost-startStop-1] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-20 15:59:46.006  INFO 3024 --- [localhost-startStop-1] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-09-20 15:59:46.045 ERROR 3024 --- [localhost-startStop-1] o.s.b.a.e.jmx.EndpointMBeanExporter      : Could not register MBean for endpoint [requestMappingEndpoint]
+
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@16984312] with key 'requestMappingEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=requestMappingEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:183) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:154) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:277) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:879) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5352) [catalina.jar:8.0.53]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:973) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850) [catalina.jar:8.0.53]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=requestMappingEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_181]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_181]
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	... 32 common frames omitted
+
+2018-09-20 15:59:46.050 ERROR 3024 --- [localhost-startStop-1] o.s.b.a.e.jmx.EndpointMBeanExporter      : Could not register MBean for endpoint [environmentEndpoint]
+
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@8ee1ae4] with key 'environmentEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=environmentEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:183) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:154) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:277) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:879) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5352) [catalina.jar:8.0.53]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:973) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850) [catalina.jar:8.0.53]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=environmentEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_181]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_181]
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	... 32 common frames omitted
+
+2018-09-20 15:59:46.054 ERROR 3024 --- [localhost-startStop-1] o.s.b.a.e.jmx.EndpointMBeanExporter      : Could not register MBean for endpoint [healthEndpoint]
+
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@35190a04] with key 'healthEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=healthEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:183) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:154) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:277) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:879) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5352) [catalina.jar:8.0.53]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:973) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850) [catalina.jar:8.0.53]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=healthEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_181]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_181]
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	... 32 common frames omitted
+
+2018-09-20 15:59:46.058 ERROR 3024 --- [localhost-startStop-1] o.s.b.a.e.jmx.EndpointMBeanExporter      : Could not register MBean for endpoint [beansEndpoint]
+
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@5fbfd4a7] with key 'beansEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=beansEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:183) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:154) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:277) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:879) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5352) [catalina.jar:8.0.53]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:973) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850) [catalina.jar:8.0.53]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=beansEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_181]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_181]
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	... 32 common frames omitted
+
+2018-09-20 15:59:46.062 ERROR 3024 --- [localhost-startStop-1] o.s.b.a.e.jmx.EndpointMBeanExporter      : Could not register MBean for endpoint [infoEndpoint]
+
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@1d62797f] with key 'infoEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=infoEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:183) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:154) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:277) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:879) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5352) [catalina.jar:8.0.53]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:973) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850) [catalina.jar:8.0.53]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=infoEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_181]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_181]
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	... 32 common frames omitted
+
+2018-09-20 15:59:46.066 ERROR 3024 --- [localhost-startStop-1] o.s.b.a.e.jmx.EndpointMBeanExporter      : Could not register MBean for endpoint [metricsEndpoint]
+
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@6523790d] with key 'metricsEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=metricsEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:183) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:154) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:277) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:879) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5352) [catalina.jar:8.0.53]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:973) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850) [catalina.jar:8.0.53]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=metricsEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_181]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_181]
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	... 32 common frames omitted
+
+2018-09-20 15:59:46.070 ERROR 3024 --- [localhost-startStop-1] o.s.b.a.e.jmx.EndpointMBeanExporter      : Could not register MBean for endpoint [traceEndpoint]
+
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@18971687] with key 'traceEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=traceEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:183) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:154) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:277) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:879) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5352) [catalina.jar:8.0.53]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:973) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850) [catalina.jar:8.0.53]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=traceEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_181]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_181]
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	... 32 common frames omitted
+
+2018-09-20 15:59:46.087 ERROR 3024 --- [localhost-startStop-1] o.s.b.a.e.jmx.EndpointMBeanExporter      : Could not register MBean for endpoint [dumpEndpoint]
+
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@1dc4d5d3] with key 'dumpEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=dumpEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:183) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:154) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:277) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:879) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5352) [catalina.jar:8.0.53]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:973) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850) [catalina.jar:8.0.53]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=dumpEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_181]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_181]
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	... 32 common frames omitted
+
+2018-09-20 15:59:46.098 ERROR 3024 --- [localhost-startStop-1] o.s.b.a.e.jmx.EndpointMBeanExporter      : Could not register MBean for endpoint [autoConfigurationReportEndpoint]
+
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@1fe1f209] with key 'autoConfigurationReportEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:183) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:154) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:277) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:879) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5352) [catalina.jar:8.0.53]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:973) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850) [catalina.jar:8.0.53]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_181]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_181]
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	... 32 common frames omitted
+
+2018-09-20 15:59:46.102 ERROR 3024 --- [localhost-startStop-1] o.s.b.a.e.jmx.EndpointMBeanExporter      : Could not register MBean for endpoint [configurationPropertiesReportEndpoint]
+
+org.springframework.jmx.export.UnableToRegisterMBeanException: Unable to register MBean [org.springframework.boot.actuate.endpoint.jmx.DataEndpointMBean@7f6499a0] with key 'configurationPropertiesReportEndpoint'; nested exception is javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:628) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.registerEndpoint(EndpointMBeanExporter.java:183) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.locateAndRegisterEndpoints(EndpointMBeanExporter.java:163) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.doStart(EndpointMBeanExporter.java:154) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBeanExporter.start(EndpointMBeanExporter.java:277) [spring-boot-actuator-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:173) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:51) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:346) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:149) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:112) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:879) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:144) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) [spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.run(SpringBootServletInitializer.java:151) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.createRootApplicationContext(SpringBootServletInitializer.java:131) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.boot.web.support.SpringBootServletInitializer.onStartup(SpringBootServletInitializer.java:86) [spring-boot-1.4.3.RELEASE.jar:1.4.3.RELEASE]
+	at org.springframework.web.SpringServletContainerInitializer.onStartup(SpringServletContainerInitializer.java:169) [spring-web-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5352) [catalina.jar:8.0.53]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:755) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:731) [catalina.jar:8.0.53]
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:973) [catalina.jar:8.0.53]
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1850) [catalina.jar:8.0.53]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_181]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: javax.management.InstanceAlreadyExistsException: org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900) ~[na:1.8.0_181]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324) ~[na:1.8.0_181]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522) ~[na:1.8.0_181]
+	at org.springframework.jmx.support.MBeanRegistrationSupport.doRegister(MBeanRegistrationSupport.java:195) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanInstance(MBeanExporter.java:682) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	at org.springframework.jmx.export.MBeanExporter.registerBeanNameOrInstance(MBeanExporter.java:624) ~[spring-context-4.3.5.RELEASE.jar:4.3.5.RELEASE]
+	... 32 common frames omitted
+
+2018-09-20 15:59:46.102  INFO 3024 --- [localhost-startStop-1] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-20 15:59:46.104  INFO 3024 --- [localhost-startStop-1] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-20 15:59:46.132  INFO 3024 --- [localhost-startStop-1] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-20 15:59:46.158  INFO 3024 --- [localhost-startStop-1] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-20 15:59:46.991  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_1
+2018-09-20 15:59:47.003  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_1
+2018-09-20 15:59:47.011  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_2
+2018-09-20 15:59:47.170  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDataSourceUsingGET_1
+2018-09-20 15:59:47.363  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveAddDataSourceUsingPOST_1
+2018-09-20 15:59:47.445  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDatasetVariablesUsingGET_1
+2018-09-20 15:59:47.500  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDatasetVariablesUsingGET_2
+2018-09-20 15:59:47.503  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDatasetVariablesUsingGET_3
+2018-09-20 15:59:47.517  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDatasetVariablesUsingGET_4
+2018-09-20 15:59:47.520  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getDatasetVariablesUsingGET_5
+2018-09-20 15:59:47.553  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: loadUsingPOST_1
+2018-09-20 15:59:47.627  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_3
+2018-09-20 15:59:47.651  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2018-09-20 15:59:47.665  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findUsingGET_2
+2018-09-20 15:59:47.710  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_4
+2018-09-20 15:59:47.726  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createDatasetsUsingPOST_1
+2018-09-20 15:59:47.745  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getClassificationVariablesUsingGET_1
+2018-09-20 15:59:47.754  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRapidAnalyzerVariablesUsingGET_1
+2018-09-20 15:59:47.786  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveKeyValueUsingPOST_1
+2018-09-20 15:59:47.795  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_5
+2018-09-20 15:59:47.933  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2018-09-20 15:59:47.938  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_6
+2018-09-20 15:59:47.947  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: saveUsingPOST_7
+2018-09-20 15:59:48.020  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteCreatedVariableUsingDELETE_1
+2018-09-20 15:59:48.026  INFO 3024 --- [localhost-startStop-1] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: editVariableValuesByuniqueIdUsingPOST_1
+2018-09-20 15:59:48.078  INFO 3024 --- [localhost-startStop-1] c.r.account.WebServiceApplication        : Started WebServiceApplication in 14.501 seconds (JVM running for 100.26)
+2018-09-20 16:00:35.410  INFO 3024 --- [localhost-startStop-2] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@47c17744: startup date [Thu Sep 20 15:59:34 IST 2018]; root of context hierarchy
+2018-09-20 16:00:35.413  INFO 3024 --- [localhost-startStop-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-09-20 16:00:35.415  INFO 3024 --- [localhost-startStop-2] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-09-20 16:00:35.416  INFO 3024 --- [localhost-startStop-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-20 16:00:35.424  INFO 3024 --- [localhost-startStop-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-09-20 16:00:35.480  INFO 3024 --- [localhost-startStop-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-09-20 16:00:35.488  INFO 3024 --- [localhost-startStop-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-09-20 16:00:35.535  INFO 3024 --- [localhost-startStop-2] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@392ee3e3: startup date [Thu Sep 20 15:58:14 IST 2018]; root of context hierarchy
+2018-09-20 16:00:35.538  INFO 3024 --- [localhost-startStop-2] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 2147483647
+2018-09-20 16:00:35.569  INFO 3024 --- [localhost-startStop-2] o.s.c.s.DefaultLifecycleProcessor        : Stopping beans in phase 0
+2018-09-20 16:00:35.570  INFO 3024 --- [localhost-startStop-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-20 16:00:35.573  INFO 3024 --- [localhost-startStop-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
